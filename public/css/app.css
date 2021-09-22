@@ -1,0 +1,21 @@
+.div-main {
+  font-size: 50px;
+}
+
+.div-main .div-sub-box {
+  color: red;
+  background-color: gray;
+}
+
+@media (min-width: 768px) {
+  .div-main {
+    color: red;
+  }
+}
+
+@media (min-width: 996px) {
+  .div-main {
+    color: black;
+  }
+}
+
