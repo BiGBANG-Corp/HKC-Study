@@ -1,4 +1,7 @@
 {
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/sample/common.js": "/js/sample/common.js",
+    "/js/sample/read.js": "/js/sample/read.js",
+    "/js/web/common.js": "/js/web/common.js",
+    "/css/web/style.css": "/css/web/style.css",
+    "/css/sample/style.css": "/css/sample/style.css"
 }

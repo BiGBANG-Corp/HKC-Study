@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+const glob = require('glob');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,5 +12,22 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+
+glob.sync('resources/sass/web/*.scss').map(function(file) {
+    mix.sass(file, 'public/css/web');
+});
+
+
+glob.sync('resources/sass/sample/*.scss').map(function(file) {
+    mix.sass(file, 'public/css/sample');
+ });
+
+
+
+glob.sync('resources/js/web/*.js').map(function(file) {
+    mix.js(file, 'public/js/web');
+});
+
+glob.sync('resources/js/sample/*.js').map(function(file) {
+    mix.js(file, 'public/js/sample');
+});
